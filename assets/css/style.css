@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a1a2b;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.haider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.haider p {
+  font-size: 43px;
+  transform: translate(286px, 61px);
+  color: #9e9e9e;
+}
+
+.haider .search-box {
+  transform: translate(-180px, 122px);
+  width: 456px;
+  height: 42px;
+  border-radius:  10px 0  0 10px;
+  border: none;
+  background: #9e9e9e;
+  padding-left: 17px;
+  font-size: 16px;
+}
+.haider .search-btn{
+  height: 42px;
+  border: none;
+  background: #9e9e9e;
+  padding-left: 17px;
+  font-size: 16px;
+  transform: translate(-183px, 122px);
+  border-radius: 0 10px 10px 0;
+  width: 91px;
+  align-items: center;
+  padding-right: 19px;
+  
+}
+
+.container2 {
+  margin-top: 156px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin-left: 31px;
+  width: 1273px;
+  overflow: hidden;
+  border-radius: 28px
+
+}
+
+
+.container2 .card {
+  margin: 32px 3px 3px 27px;
+  background: #9e9e9e;
+  height: 190px;
+  width: 606px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+
+}
+.container2 .card img {
+  width: 213px;
+  border-radius: 27px;
+  padding: 0px 0px 0px 0px;
+  height: 191px;
+  box-shadow: 17px 1px 5px gray;
+}
+
+.container2 .card h1 {
+  transform: translate(272px, -175px);
+  font-size: 13px;
+}
+.container2 .card .category {
+  transform: translate(303px, -163px);
+  font-size: 19px;
+}
+.container2 .card .price{
+  transform: translate(354px, -152px);
+}
+.container2 .card .stock{
+  transform: translate(365px, -141px);
+}
+
+.container2 .card div{
+  transform: translate(351px, -118px);
+  }
+.container2 .card .c-blue, .container2 .card .c-green ,.container2 .card .c-gray , .container2 .card .c-yellow{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: blue;
+  transform: translate(17px, 0px);
+}
+.container2 .card .c-green {
+  background-color: green;
+  transform: translate(38px, -10px);
+}
+.container2 .card .c-gray{
+  background-color: gray;
+  transform: translate(60px, -20px);
+}
+.container2 .card .c-yellow{
+  background-color: yellow;
+  transform: translate(80px, -30px);
+}
+.container2 .card .c-blue:hover{
+  box-shadow: 0 0 10px blue, 0 0 10px blue,0 0 10px blue ;
+}
+.container2 .card .c-green:hover{
+  box-shadow: 0 0 10px green, 0 0 10px green,0 0 10px green ;
+}
+.container2 .card .c-gray:hover{
+  box-shadow: 0 0 10px gray, 0 0 10px gray,0 0 10px gray ;
+}
+.container2 .card .c-yellow:hover{
+  box-shadow: 0 0 10px yellow, 0 0 10px yellow,0 0 10px yellow ;
+}
+.points {
+  width: 138px;
+  height: 50px;
+  transform: translate(614px, 15px);
+  margin-top: 25px;
+}
+.points .point1 , .points .point2 , .points .point3{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #9e9e9e;
+  transform: translate(32px, 5px);
+}
+.points .point2{
+  transform: translate(61px, -5px);
+}
+.points .point3{
+  transform: translate(89px, -15px);
+}
+
+.points .point1:hover , .points .point2:hover , .points .point3:hover{
+  box-shadow: 0 0 10px #9e9e9e, 0 0 10px #9e9e9e,0 0 10px #9e9e9e ;
+}
+/* responsive */
+@media (min-width : 667px) and (max-width : 992px) {
+  .haider{
+    width: 100%;
+  }
+  .haider p{
+    font-size: 38px;
+    transform: translate(476px, 61px);
+  }
+  .haider .search-box {
+    transform: translate(385px, 122px); 
+  }
+  .haider .search-btn{
+    transform: translate(841px, 80px);
+  }
+  .container2{
+    margin-left: -11px;
+  }
+  .points{
+    
+    transform: translate(572px, 15px);
+  }
+}
